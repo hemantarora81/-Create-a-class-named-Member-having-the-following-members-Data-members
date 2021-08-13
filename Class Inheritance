@@ -1,0 +1,48 @@
+package com.company;
+class Member{
+    String Name;
+    int Age;
+    String number;
+    String Address;
+    int Salary;
+    public void printSalary(){
+        System.out.println(Salary);
+    }
+}
+class Employee extends Member{
+    String spealization;
+}
+class Manager extends Member{
+    String Department;
+}
+public class Question_2 {
+    public static void main(String[] args) {
+// Question --       Create a class named 'Member' having the following members:
+//        Data members
+//        1 - Name
+//        2 - Age
+//        3 - Phone number
+//        4 - Address
+//        5 - Salary
+//        It also has a method named 'printSalary' which prints the salary of the members.
+//        Two classes 'Employee' and 'Manager' inherits the 'Member' class. The 'Employee' and 'Manager' classes have data members 'specialization' and 'department' respectively.
+//         Now, assign name, age, phone number, address and salary to an employee
+//         and a manager by making an object of both of these classes and print the same.
+Employee m = new Employee();
+m.Name = "Hemant Arora";
+m.Age = 19;
+m.Address = "ABC";
+m.Salary = 10000;
+m.number = "123456789";
+m.spealization = "Coding";
+        System.out.println(m.Name);
+        System.out.println(m.Salary);
+        System.out.println(m.Address);
+        System.out.println(m.Age);
+        System.out.println(m.number);
+        System.out.println(m.spealization);
+        Manager mn = new Manager();
+        mn.Department = "Accounts";
+        System.out.println(mn.Department);
+    }
+}
